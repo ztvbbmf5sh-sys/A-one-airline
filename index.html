@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A One Airline Homepage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#136dec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101822",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] dark:border-b-background-dark/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 sm:px-8 lg:px-16 py-3">
+<div class="flex items-center gap-4 text-[#111418] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">A One Airline</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-center items-center gap-9">
+<a class="text-[#111418] dark:text-gray-300 dark:hover:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Book</a>
+<a class="text-[#111418] dark:text-gray-300 dark:hover:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Manage</a>
+<a class="text-[#111418] dark:text-gray-300 dark:hover:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Deals</a>
+<a class="text-[#111418] dark:text-gray-300 dark:hover:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Loyalty Program</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Log In</span>
+</button>
+<div class="hidden lg:block bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGszImviMC2LMaEkBKpYTX9ZNG_m3KFIpPyhfZ2sdCFxM53mEFXQb2DA_qb6U02MWsJxoev3wUd2y4rVqowNMcjd8yG2LMRGyLiWYTiNpOvcrX8M6hKsy9H-sw83pW06aDgC7BD5lTYzpDwdH6r-qsOWBhksfSdBpFS8Vg0X18QRnXG-4VT-6mpCifyv_dBdPMkWxS1UQ2sVGO2uE70McG_6Wmfd-7pGgV4JcJ0UWhx_KIcipkJDUSU8ZF6RUwE4V5qG-qaC9Iy8k");'></div>
+</div>
+</header>
+<main class="flex-1">
+<!-- HeroSection -->
+<section class="relative">
+<div class="flex min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-4 text-center" data-alt="A One Airline airplane flying above the clouds during a vibrant sunset" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAU3kp-b6aLR5NjXJy_8D3hEVnqyTwSeQr-Z3dWVf80EYAJylQQBUYsdkd5iE63b1YEnWa73NyV5e2oUbDcuWah4_GzN1_iVb34nwxLKhTz2dGsLfJLrWLeuGKvu4PRFsbbIiF6itVAZCcRsn_wy1UQErHe19TU5HZrsdMfLamrBWSxqIew3wv-1rFjFaz7d51PHD22FlLFregHqmbxGBr6CXxfn9_cQbvKVyX7a7VF6SklZ_iqpwaYtLkR9hfRNbJZ2sVAhNbA8qI");'>
+<div class="flex flex-col gap-2">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-6xl">Your Journey Begins Here</h1>
+<h2 class="text-white/90 text-base font-normal leading-normal md:text-lg">Discover new destinations and book your next flight with A One Airline.</h2>
+</div>
+</div>
+<!-- Flight Search Form -->
+<div class="relative px-4 sm:px-8 -mt-40">
+<div class="max-w-5xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-2xl p-6">
+<div class="flex border-b border-[#dbe0e6] dark:border-gray-700 justify-start mb-6">
+<a class="flex items-center justify-center gap-2 border-b-[3px] border-b-primary text-primary pb-[7px] pt-2.5 px-4" href="#">
+<span class="material-symbols-outlined">flightsmode</span>
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Flights</p>
+</a>
+<a class="flex items-center justify-center gap-2 border-b-[3px] border-b-transparent text-gray-500 dark:text-gray-400 pb-[7px] pt-2.5 px-4 hover:border-b-primary/50 hover:text-primary dark:hover:text-white/80 transition-colors" href="#">
+<span class="material-symbols-outlined">hotel</span>
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Stays</p>
+</a>
+<a class="flex items-center justify-center gap-2 border-b-[3px] border-b-transparent text-gray-500 dark:text-gray-400 pb-[7px] pt-2.5 px-4 hover:border-b-primary/50 hover:text-primary dark:hover:text-white/80 transition-colors" href="#">
+<span class="material-symbols-outlined">directions_car</span>
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Car Rentals</p>
+</a>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300">From</label>
+<input class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-primary focus:ring-primary transition" placeholder="Departure City" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300">To</label>
+<input class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-primary focus:ring-primary transition" placeholder="Arrival City" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300">Depart</label>
+<input class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-primary focus:ring-primary transition" type="date"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300">Return</label>
+<input class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-primary focus:ring-primary transition" type="date"/>
+</div>
+</div>
+<button class="flex w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors" type="submit">
+<span class="truncate">Search Flights</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Quick Links -->
+<section class="max-w-7xl mx-auto px-4 sm:px-8 py-16">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex items-start gap-4 p-4">
+<div class="flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-4xl">flight_takeoff</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white">Check-in Online</h3>
+<p class="text-base text-gray-600 dark:text-gray-400 mt-1">Save time at the airport by checking in for your flight online.</p>
+<a class="text-primary font-bold text-sm mt-2 inline-block" href="#">Check In →</a>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4">
+<div class="flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-4xl">airplane_ticket</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white">Manage Booking</h3>
+<p class="text-base text-gray-600 dark:text-gray-400 mt-1">Change your flight, update your details, or add extras.</p>
+<a class="text-primary font-bold text-sm mt-2 inline-block" href="#">Manage →</a>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4">
+<div class="flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-4xl">connecting_airports</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white">Flight Status</h3>
+<p class="text-base text-gray-600 dark:text-gray-400 mt-1">Check the latest arrival and departure information for your flight.</p>
+<a class="text-primary font-bold text-sm mt-2 inline-block" href="#">Check Status →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Promotions Section -->
+<section class="max-w-7xl mx-auto px-4 sm:px-8 py-16">
+<h2 class="text-[#111418] dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] pb-6">Exclusive Deals</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-lg bg-white dark:bg-gray-800 overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Tropical beach with palm trees and clear blue water" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuATsRHUtgEKJEfkHD6WOlN1dv1B6HpvI2Yaq6vJBVhoR7QJ4asoBN6hHUvH_WTrpDT33Ag_-norgXpUbXgQwqvldcSU_DMA5GwuzcH45ve8wNRwMb231TIIV0b9e5jkfVuABgyLLXqvDUViliVUQaZChmvel3Z7zzgQJSkCfB4rUUGzNPBptLcKcdSuXzabXFQQGDjMHsYZOHs5c7lAV_uNLY2ZgfzhMmX2one_xEovupMOzhyF9i2ewmy0m60GBhbI5trEsmCNT3w");'></div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-2 p-6">
+<p class="text-[#111418] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">Escape to the Caribbean</p>
+<div class="flex items-end gap-3 justify-between">
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">Sun, sand, and savings await. Book your tropical getaway today.</p>
+<button class="flex-shrink-0 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium leading-normal hover:bg-primary/90 transition-colors">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-lg bg-white dark:bg-gray-800 overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Charming European street with old buildings and a cobblestone road" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPmH5r7RJVJvmzdOK_p-reAO0nOuB6rrog76f5Jv7XqahzxYgWOda-JDBgVID0WWF96HGISGJSGUg7DjFRVhf-Wz1-IV1WuWr6Wch3vB1DH4nvKu7lxhoaUqDSBSFJ17tg1AzFbO5SnjqDUQZV_ZyuXVNtIV53CocaTz1CgZLh8dkboS9jCoYa9DLejNouNx-v083BFRVho4xK2SJVpLfWbTsVlhNCoyyxFZb06tGyckXejqFK_yThjEo9YUVBxq9YS7rdflqRP1E");'></div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-2 p-6">
+<p class="text-[#111418] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">European Getaway Sale</p>
+<div class="flex items-end gap-3 justify-between">
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">Discover historic cities with our special fares to Europe.</p>
+<button class="flex-shrink-0 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium leading-normal hover:bg-primary/90 transition-colors">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-lg bg-white dark:bg-gray-800 overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Aerial view of a vibrant cityscape at night with illuminated skyscrapers" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDu0mA1PDs-qVfGYW32BfY0IKnZl20lLF8_Gmgfc9FKSreBDYzEELaZEZzeLyV5JcPez_Qrlt39beaHqY4RJOQvvaT4yiOy1hLK0Jl-2BMjGlDD1tk3suKp8xjo1PRLjzC9x5YcdqTatZM3yPZYeMoP7fGYn9R4lH749k5b_vPRzySmlW-fizlEkuDisMZv7W8Of1pn2MCoIskuggmmcMBGUdrCD_-BsNSAhTcatjE239jbdr4qo7OHV5tGTDeloJCMOMbMi3Q8Kak");'></div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-2 p-6">
+<p class="text-[#111418] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">City Break Specials</p>
+<div class="flex items-end gap-3 justify-between">
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">Explore the world's most exciting cities for less.</p>
+<button class="flex-shrink-0 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium leading-normal hover:bg-primary/90 transition-colors">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Destinations -->
+<section class="max-w-7xl mx-auto px-4 sm:px-8 py-16">
+<h2 class="text-[#111418] dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] pb-6">Popular Destinations</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+<div class="group relative overflow-hidden rounded-xl">
+<div class="h-80 w-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="New York City skyline with the Statue of Liberty" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCRrbl0AaxQCdWsoEFu2PvKYDakqZix2Y6I4UdZPnozGcuV5ZoO7GYKoI4x4PMr_VMh1p6DH-3TSR6wh4dKAfxsz-aMDOY1D2AWE0vASZTH0Gk2a8OYC7DOK5vbG1ypVLWB_QsEB9nMBLGeFvFFuE8HlzKPm7kcNcUXe93lRqt7HMr2aRNbI9NHqJiNYqn2pN5xYCEqLeh7VoVJtQaeF2bQ9aED7EgZHfieJMF-b4yvSOZd2vYmo3klfcjhH2myYPUAwDjokhNDfZ8");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-white text-2xl font-bold">New York</h3>
+<p class="text-white/80">from $299</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl">
+<div class="h-80 w-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Eiffel Tower in Paris with a dramatic sky" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAlDcop8ZsKtlU-0ZFvZEJmxzWPpasfClxGLNNjsp27ei8Za7COGx3v_Ehh9vTZIU-GHKalLRWD-Mvh8Mb7ya9dMPui2ZgA3dDUaC_9zbOvriU5wLLn16_Dw2weZuGSu1dAuD0BxWkmU7vr2V859a7JKBFVvFZ4loQUBSxB0bYkdNWL1YPyAd7cu6xYxLpQjQ4lJHzm55ngIXiTLFwulgVqvGAeQUDwFOw-7fqL1HtM2ViR05Hixz2iyfcJQ7bEvtLFz3VZOlF4DA");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-white text-2xl font-bold">Paris</h3>
+<p class="text-white/80">from $450</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl">
+<div class="h-80 w-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Shibuya crossing in Tokyo at night with neon lights" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCApzhaiprJ04LLHNu94PShLc75yry1Y_f1zdin5gi92X8x-dpWcsC9Wgz8opSmsMNdcEdcp7rlWZaIbQsoR2LmnxPpHXKpFD8s6PEJ2JxBvg05jk1lOThahOqwBCjQsi8fq9wNq02LLtVgVy985eDqRko5_xPcgWF9MJE000cHHbTyeT17jIEmo2v-m9baVmXTGEf3zIkJ-YbF83DB6bP-7eVshACbXjMl0msNMFt75-Q0XiOGj91kzx-apv1jRfRsvlu38lszQc0");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-white text-2xl font-bold">Tokyo</h3>
+<p class="text-white/80">from $720</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl">
+<div class="h-80 w-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Sydney Opera House and Harbour Bridge" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDcW2ZIKOj3DPOHgDRT79F4ngmk2pnIqt3forJtbbFd5Ubs1KVQTYLxR__H4en4CnapVYVzw3XK0vffsO2AvFhj217kJfXP14KEcIK-yJd66NpMNmy5t_c35bVrCoBcPO2AUx-iK8AEaI7D9_iZOKuNXdUpvIgNBrM6rTu45NUoSt_8kx7UtqX60Ns2sHHfRXM8XbEaRN7YBzBeB6oYfmDgifBFVYGDEais-PHJ3OAgaBPm_sNQaUlDAzXQzL9IDCBO253Lv5q1C8");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-white text-2xl font-bold">Sydney</h3>
+<p class="text-white/80">from $950</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400">
+<div class="max-w-7xl mx-auto px-4 sm:px-8 py-16">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+<div class="col-span-2 lg:col-span-1">
+<div class="flex items-center gap-2 text-[#111418] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold">A One Airline</h2>
+</div>
+<p class="mt-4 text-sm">Your journey begins with us. Fly to your favorite destinations with comfort and style.</p>
+</div>
+<div>
+<h3 class="font-bold text-gray-800 dark:text-white mb-4">About Us</h3>
+<ul class="space-y-2">
+<li><a class="hover:text-primary transition-colors" href="#">Our Company</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Press</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Media Kit</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-gray-800 dark:text-white mb-4">Support</h3>
+<ul class="space-y-2">
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Baggage</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Special Assistance</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-gray-800 dark:text-white mb-4">Legal</h3>
+<ul class="space-y-2">
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Use</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h3 class="font-bold text-gray-800 dark:text-white mb-4">Newsletter</h3>
+<p class="text-sm mb-4">Subscribe for deals and updates.</p>
+<form class="flex">
+<input class="w-full rounded-l-lg border-gray-300 dark:border-gray-600 dark:bg-gray-800 focus:border-primary focus:ring-primary transition" placeholder="Your Email" type="email"/>
+<button class="bg-primary text-white px-4 rounded-r-lg hover:bg-primary/90 transition-colors" type="submit">
+<span class="material-symbols-outlined">send</span>
+</button>
+</form>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-sm">
+<p>© 2024 A One Airline. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
